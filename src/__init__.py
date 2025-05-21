@@ -1,0 +1,3 @@
+"""
+Face Organizer application package.
+""" 
