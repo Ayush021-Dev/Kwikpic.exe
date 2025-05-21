@@ -49,6 +49,3 @@ python main.py
 - `assets/` - Application resources (images, icons, etc.)
 - `tests/` - Unit tests
 
-## License
-
-MIT License 
