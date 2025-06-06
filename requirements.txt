@@ -1,7 +1,9 @@
-face-recognition==1.3.0
-opencv-python==4.9.0.80
-numpy==1.26.4
-PyQt5==5.15.9
+face-recognition>=1.3.0
+opencv-python>=4.5.0
+numpy>=1.19.0
+PyQt5>=5.15.0
 pillow>=10.0.0
 scikit-image>=0.22.0
-scikit-learn>=1.3.0 
+scikit-learn>=1.3.0
+watchdog>=2.1.0 
+psutil>=5.9.0
