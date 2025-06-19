@@ -6,6 +6,22 @@ from PyQt5.QtCore import Qt
 from src.ui.main_window import MainWindow
 from src.ui.tray_icon import TrayIcon
 
+def add_to_startup():
+    try:
+        import win32com.client
+        startup_path = os.path.join(os.environ["APPDATA"], "Microsoft", "Windows", "Start Menu", "Programs", "Startup")
+        exe_path = sys.executable  # Path to the running .exe
+        shortcut_path = os.path.join(startup_path, "FaceOrganizer.lnk")  # Change name as desired
+
+        shell = win32com.client.Dispatch("WScript.Shell")
+        shortcut = shell.CreateShortCut(shortcut_path)
+        shortcut.Targetpath = exe_path
+        shortcut.WorkingDirectory = os.path.dirname(exe_path)
+        shortcut.IconLocation = exe_path
+        shortcut.save()
+    except Exception as e:
+        print(f"Failed to add to startup: {e}")
+
 def set_process_priority_low():
     try:
         # Get the current process
@@ -20,6 +36,7 @@ def set_process_priority_low():
         print(f"Failed to set process priority: {e}")
 
 def main():
+    add_to_startup()
     # Enable high DPI scaling
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
     QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
