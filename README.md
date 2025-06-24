@@ -1,6 +1,6 @@
-# 📸 Face Organizer
+# 📸  Kwikpic- Face Organizer
 
-**Face Organizer** is a smart desktop photo management tool that automatically organizes your image collections using face detection and recognition. Similar to Google Photos — but fully offline and privacy-respecting — this app clusters photos by person, filters out blurry images, and continuously monitors folders for changes. It runs silently in the background and is packaged as a standalone `.exe` for easy use on Windows systems.
+**Kwikpic** is a smart desktop photo management tool that automatically organizes your image collections using face detection and recognition. Inspired by the already existing Kwikpic app which is made for android phones — fully offline and privacy-respecting — this app clusters photos by person, filters out blurry images, and continuously monitors folders for changes. It runs silently in the background and is packaged as a standalone `.exe` for easy use on Windows systems.
 
 ---
 
